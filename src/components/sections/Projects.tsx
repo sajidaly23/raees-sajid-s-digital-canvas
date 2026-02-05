@@ -31,6 +31,30 @@ const projects = [
     featured: true,
   },
   {
+    title: "HR Management System",
+    description:
+      "A robust HR management platform featuring employee administration, attendance tracking, and performance monitoring with a dedicated admin dashboard.",
+    techStack: ["React", "Node.js", "MySQL", "Express"],
+    live: "https://hr-management-ten-rust.vercel.app/addmin",
+    featured: true,
+  },
+  {
+    title: "Horizon Bee Tech",
+    description:
+      "A modern corporate website for a technology solutions provider, featuring a sleek design, service showcases, and interactive elements built for high performance.",
+    techStack: ["React", "Tailwind CSS", "Framer Motion", "Vite"],
+    live: "https://horizonbeetechcom.vercel.app",
+    featured: true,
+  },
+  {
+    title: "Moon Guesthouse",
+    description:
+      "A charming website for a guesthouse, featuring room presentations, ameneties overview, and a seamless user experience for potential guests.",
+    techStack: ["React", "Lucide Icons", "Tailwind CSS", "Vite"],
+    live: "https://moon-guesthouse12.vercel.app/",
+    featured: true,
+  },
+  {
     title: "REST API Boilerplate",
     description:
       "Production-ready Node.js REST API template with authentication, validation, error handling, and MongoDB integration.",
@@ -92,9 +116,8 @@ const Projects = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.2 + index * 0.1 }}
                 viewport={{ once: true }}
-                className={`group relative p-6 rounded-xl bg-gradient-card border border-border shadow-card hover:shadow-card-hover transition-all duration-300 ${
-                  project.featured ? "" : "md:last:col-span-2 md:last:max-w-[calc(50%-12px)] md:last:mx-auto"
-                }`}
+                className={`group relative p-6 rounded-xl bg-gradient-card border border-border shadow-card hover:shadow-card-hover transition-all duration-300 ${project.featured ? "" : "md:last:col-span-2 md:last:max-w-[calc(50%-12px)] md:last:mx-auto"
+                  }`}
               >
                 {/* Header */}
                 <div className="flex items-start justify-between mb-4">

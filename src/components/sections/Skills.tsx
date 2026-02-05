@@ -21,6 +21,9 @@ const skillCategories = [
     title: "Database",
     skills: [
       { name: "MongoDB", level: 85 },
+      { name: "MySQL", level: 80 },
+      { name: "PostgreSQL", level: 82 },
+      { name: "Supabase", level: 88 },
     ],
   },
   {
@@ -38,6 +41,9 @@ const techStack = [
   { name: "Node.js", icon: "💚" },
   { name: "Express", icon: "🚀" },
   { name: "MongoDB", icon: "🍃" },
+  { name: "MySQL", icon: "🐬" },
+  { name: "PostgreSQL", icon: "🐘" },
+  { name: "Supabase", icon: "⚡" },
   { name: "JavaScript", icon: "💛" },
   { name: "Git", icon: "📦" },
 ];

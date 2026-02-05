@@ -37,7 +37,7 @@ const Hero = () => {
             transition={{ delay: 0.3, duration: 0.6 }}
             className="text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight mb-6"
           >
-            Raees Sajid{" "}
+             Sajid {" "}
             <span className="text-gradient">Ali</span>
           </motion.h1>
 
@@ -48,7 +48,7 @@ const Hero = () => {
             transition={{ delay: 0.4, duration: 0.6 }}
             className="text-xl md:text-2xl text-muted-foreground mb-4"
           >
-            Computer Science Student & Full Stack Web Developer
+            Computer Science Student & Backend  Web Developer
           </motion.p>
 
           {/* Tagline */}
