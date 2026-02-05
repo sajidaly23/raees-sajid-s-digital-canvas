@@ -7,11 +7,11 @@ const Hero = () => {
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-hero">
       {/* Background Grid Pattern */}
       <div className="absolute inset-0 grid-pattern opacity-50" />
-      
+
       {/* Gradient Orbs */}
       <div className="absolute top-1/4 -left-32 w-96 h-96 bg-primary/20 rounded-full blur-3xl animate-float" />
       <div className="absolute bottom-1/4 -right-32 w-96 h-96 bg-primary/10 rounded-full blur-3xl animate-float" style={{ animationDelay: '-3s' }} />
-      
+
       <div className="container relative z-10 px-4 py-20">
         <motion.div
           initial={{ opacity: 0, y: 40 }}
@@ -19,6 +19,22 @@ const Hero = () => {
           transition={{ duration: 0.8, ease: "easeOut" }}
           className="max-w-4xl mx-auto text-center"
         >
+          {/* Profile Image */}
+          <motion.div
+            initial={{ opacity: 0, scale: 0.5 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.5 }}
+            className="relative w-32 h-32 md:w-40 md:h-40 mx-auto mb-8 group"
+          >
+            <div className="absolute inset-0 bg-primary/20 rounded-full blur-2xl group-hover:bg-primary/30 transition-colors" />
+            <div className="relative w-full h-full rounded-full border-2 border-primary/50 overflow-hidden ring-4 ring-primary/10">
+              <img
+                src="/profile.jpg"
+                alt="Sajid Ali"
+                className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+              />
+            </div>
+          </motion.div>
           {/* Badge */}
           <motion.div
             initial={{ opacity: 0, scale: 0.9 }}
@@ -37,7 +53,7 @@ const Hero = () => {
             transition={{ delay: 0.3, duration: 0.6 }}
             className="text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight mb-6"
           >
-             Sajid {" "}
+            Sajid {" "}
             <span className="text-gradient">Ali</span>
           </motion.h1>
 
@@ -100,7 +116,7 @@ const Hero = () => {
               <Linkedin className="w-5 h-5" />
             </a>
             <a
-              href="mailto:raees@example.com"
+              href="mailto:raeessajidali10@gmail.com"
               className="p-3 rounded-full bg-secondary hover:bg-secondary/80 transition-colors"
             >
               <Mail className="w-5 h-5" />
